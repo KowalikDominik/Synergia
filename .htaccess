@@ -1,0 +1,32 @@
+Options +FollowSymLinks  
+#Options Indexes, Symlinks, Multiviews
+RewriteEngine On
+
+
+ 
+RewriteRule ^home$ index.php [L] 
+RewriteRule ^onas$ index.php?id=2 [L] 
+RewriteRule ^oferta$ index.php?id=10 [L] 
+RewriteRule ^partnerzy$ index.php?id=4 [L] 
+RewriteRule ^sponsorzy$ index.php?id=5 [L] 
+RewriteRule ^darczyncy$ index.php?id=6 [L]
+RewriteRule ^aktualnosci$ index.php?id=7 [L]
+RewriteRule ^projekty$ index.php?id=8 [L]
+RewriteRule ^kontakt$ index.php?id=9 [L]
+RewriteRule ^([^-]+).art$ index.php?id=7&art=$1 [L]
+
+
+
+
+#ErrorDocument 400 404.html
+#ErrorDocument 401 404.html
+#ErrorDocument 403 http://www.stowarzyszeniesynergia.org/404.html
+#ErrorDocument 404 http://www.stowarzyszeniesynergia.org/404.html
+#ErrorDocument 405 404.html
+#ErrorDocument 406 404.html
+#ErrorDocument 408 404.html
+#ErrorDocument 410 404.html
+#ErrorDocument 411 404.html
+#ErrorDocument 414 404.html
+#ErrorDocument 500 http://www.stowarzyszeniesynergia.org/404.html
+#ErrorDocument 503 404.html
